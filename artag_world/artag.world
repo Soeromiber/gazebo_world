@@ -66,49 +66,6 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    <model name='asphalt_plane'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>200 200 0.1</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <box>
-              <size>200 200 0.1</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://asphalt_plane/materials/scripts</uri>
-              <uri>model://asphalt_plane/materials/textures</uri>
-              <name>vrc/asphalt</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
     <physics name='default_physics' default='0' type='ode'>
       <ode>
         <solver>
@@ -145,25 +102,15 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>410 264000000</sim_time>
-      <real_time>321 215438538</real_time>
-      <wall_time>1669179264 743173378</wall_time>
-      <iterations>66704</iterations>
+      <sim_time>438 536000000</sim_time>
+      <real_time>28 683284037</real_time>
+      <wall_time>1669362329 945302073</wall_time>
+      <iterations>7068</iterations>
       <model name='Artag'>
-        <pose>1.95928 1.0005 0 0 -0 1.5708</pose>
+        <pose>1.95928 1.0005 0 0 -0 4e-06</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
-          <pose>1.95928 1.0005 0 0 -0 1.5708</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='asphalt_plane'>
-        <pose>0 0 -0.056052 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0 0 -0.056052 0 -0 0</pose>
+          <pose>1.95928 1.0005 0 0 -0 4e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -185,7 +132,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-4.58982 -0.431563 5.59308 0 0.748384 0.038605</pose>
+        <pose>-5.06579 -0.476084 6.17342 0 0.748384 0.038605</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -208,7 +155,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://Artag/meshes/artag-2x.dae</uri>
+              <uri>model://Artag/meshes/artag-2x-with-checkerboard.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -221,7 +168,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://Artag/meshes/artag-2x.dae</uri>
+              <uri>model://Artag/meshes/artag-2x-with-checkerboard.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
